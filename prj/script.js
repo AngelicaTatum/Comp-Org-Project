@@ -1,16 +1,16 @@
 window.addEventListener('load', () => {
   const opcodes = {
-    'store': 160,
-    'load': 161,
-    'addi': 44,
-    'subi': 45,
-    'add': 50,
-    'sub': 51,
-    'mul': 52,
-    'div': 53,
-    'jpos': 127,
-    'jzero': 128,
-    'halt': 0
+    'con': 160,
+    'savex': 161,
+    'addin': 44,
+    'subin': 45,
+    'addl': 50,
+    'subl': 51,
+    'muli': 52,
+    'divl': 53,
+    'leapn': 127,
+    'leapz': 128,
+    'stop': 0
   }
 
   const numericOpCodes = [160, 161, 44, 45, 50, 52, 52, 127, 128, 0]
