@@ -5,9 +5,7 @@
   </head> 
   <body>
     <h2>A SimpleS Computer Simulator</h2> 
-    <p>This computer demonstrates the workings of a simple computer. It has 100 memory locations in a 10 by 10 grid with addresses 0 to 99 numbered from the top left row by row. The computer has a program counter which is stored in register PC and an accumulator AX. You may single step through a program or run it in one sequence. You may also specify the delay speed to observe the actions of the machine. Memory cells that are referenced become green for one instruction, those that are changed become red. This demonstrates some of the aspects of machine and assembly language programming.</p> 
-    <p>This simulator was originally written as a Java applet by <a href='https://web.archive.org/web/20160323003713/http://cs.laurentian.ca/badams/'>Barry G. Adams</a> of <a href='http://www.laurentian.ca/www/emenus/home.html'>Laurentian University</a>. Several features (<a href='http://euler.vcsu.edu/curt.hill/Computer.html'>Description</a>, <a href='computer.zip'>Source</a>) were added by <a href='http://euler.vcsu.edu/curt.hill/'>Curt Hill</a> of <a href='https://www.vcsu.edu'>Valley City State University</a>, who also provided the vintage background. Cay Horstmann reimplemented the simulator in JavaScript.</p> 
-    <p>The following table shows the instructions that are available for this computer: </p> 
+    <p>This simulator is based on the Java applet by <a href='https://web.archive.org/web/20160323003713/http://cs.laurentian.ca/badams/'>Barry G. Adams</a> of <a href='http://www.laurentian.ca/www/emenus/home.html'>Laurentian University</a>. Several features (<a href='http://euler.vcsu.edu/curt.hill/Computer.html'>Description</a>, <a href='computer.zip'>Source</a>) were added by <a href='http://euler.vcsu.edu/curt.hill/'>Curt Hill</a> of <a href='https://www.vcsu.edu'>Valley City State University</a>, who also provided the vintage background. Cay Horstmann reimplemented the simulator in JavaScript.</p>  
     <table border='1'>
       <tr>
         <th>Mnemonic</th> 
@@ -86,20 +84,14 @@
     <table id='mem'></table> 
     <div id='reg'>Registers: PC <input id='pc' size='5'/> AX <input id='ax' size='5'/> </div> 
     <div id='control'>
-      <button id='run'>Run</button> 
-      <button id='halt'>Halt</button> 
-      <button id='step'>Step</button> Delay <input id='delay' value='500' size='5'/> 
+      <button id='run'>RUN</button> 
+      <button id='halt'>STOP</button> 
+      <button id='step'>STEP-BY-STEP</button> Delay <input id='delay' value='500' size='5'/> 
     </div> 
     <div id='samples'>
-      <button id='sample1'>Count to 5</button> 
-      <button id='sample2'>Calculate 4 factorial</button> 
-      <button id='sample3'>Sum 5 numbers</button> 
-    </div> 
-    <h3>Practice Problems </h3> 
-    <ul>
-      <li><a href='problem1.html'>Problem 1</a></li> 
-      <li><a href='problem2.html'>Problem 2</a></li> 
-      <li><a href='problem3.html'>Problem 3</a></li> 
-    </ul> 
+      <button id='sample1'>Add up to 5</button> 
+      <button id='sample2'>Find 4 factorial</button> 
+      <button id='sample3'>Add up 5 numbers</button> 
+    </div>  
   </body> 
 </html>
