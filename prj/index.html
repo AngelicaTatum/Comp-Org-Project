@@ -17,67 +17,67 @@
         <td>CON</td> 
         <td>160</td> 
         <td>n</td> 
-        <td>Store the contents of AX in memory location n</td> 
+        <td>Store the value into a location n</td> 
       </tr> 
       <tr>
         <td>SAVEX</td> 
         <td>161</td> 
         <td>n</td> 
-        <td>Load AX with the contents of location n</td> 
+        <td>Push values into associated into a value n</td> 
       </tr> 
       <tr>
         <td>ADDIN</td> 
         <td>44</td> 
         <td>n</td> 
-        <td>Add n to AX (add immediate)</td> 
+        <td>Add previous value into variable</td> 
       </tr> 
       <tr>
         <td>SUBIN</td> 
         <td>45</td> 
         <td>n</td> 
-        <td>Subtract n from AX (subtract immediate)</td> 
+        <td>Subtract previous value</td> 
       </tr> 
       <tr>
         <td>ADDL</td> 
         <td>50</td> 
         <td>n</td> 
-        <td>Add the contents of location n to AX</td> 
+        <td>Add current value to variable AX</td> 
       </tr> 
       <tr>
         <td>SUBL</td> 
         <td>51</td> 
         <td>n</td> 
-        <td>Subtract the contents of location n from AX</td> 
+        <td>Subtract current value from AX</td> 
       </tr> 
       <tr>
         <td>MULl</td> 
         <td>52</td> 
         <td>n</td> 
-        <td>Multiply the contents AX by the contents of location n</td> 
+        <td>Multiply current value from AX n</td> 
       </tr> 
       <tr>
         <td>DIVL</td> 
         <td>53</td> 
         <td>n</td> 
-        <td>Divide the contents of AX by the contents of location n</td> 
+        <td>Divide current value from AX n</td> 
       </tr> 
       <tr>
         <td>LEAPN</td> 
         <td>127</td> 
         <td>n</td> 
-        <td>Jump to the instruction in location n if AX &gt; 0</td> 
+        <td>Jump to instruction in current location</td> 
       </tr> 
       <tr>
         <td>LEAPZ</td> 
         <td>128</td> 
         <td>n</td> 
-        <td>Jump to the instruction in location n if AX = 0</td> 
+        <td>If AX >= 1</td> 
       </tr> 
       <tr>
         <td>STOP</td> 
         <td>0</td> 
         <td></td> 
-        <td>Halt the execution</td> 
+        <td>If AX = -1</td> 
       </tr> 
     </table> 
     <hr/> 
